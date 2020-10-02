@@ -1,61 +1,144 @@
 <html>
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="ss.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>
 project
 </title>
+	<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+</style>
 </head>
-<body style=" color: white;">
-<header>
- <div class="main">
-  <ul>
-    <li class="active"><a href="#">HOME</a></li>
-	<li><a href="faq.html">FAQ'S</a></li>
-	<li><a href="about.html">ABOUT</a></li>
-	<li><a href="contact.html">CONTACT</a></li>
-  </ul>
- </div>
-</header> 
-<center>
-<br>
-<br><br>
-<h1 style="font-size:50px;font-family:algerian"> THE BOOKS STOP </h1>
-</center>
-<div class="icon-bar">
-  <a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a> 
-  <a href="https://twitter.com/login?lang=en" class="twitter"><i class="fa fa-twitter"></i></a> 
-  <a href="https://www.google.com/" class="google"><i class="fa fa-google"></i></a> 
-  <a href="https://www.linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a>
-  <a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a> 
+<body>
+
+<!-- Note -->
+<div style="background:yellow;padding:5px">
+  <h4 style="text-align:center">Resize the browser window to see the responsive effect.</h4>
 </div>
-<div class="term">
-<br>
-<br>
-<button class="btn one">Privacy Policy</button>
-<button class="btn two">Terms of service</button>
-<button class="btn three">Rules</button>
-<button class="btn four">EULA</button>
+
+<!-- Header -->
+<div class="header">
+  <h1>My Website</h1>
+  <p>With a <b>flexible</b> layout.</p>
 </div>
-<video width="100%" height ="500" poster="book.jpg" controls>
-<source src=" THE_BOOK_-_AD(720p).mp4 " type="video/mp4">
-</video> <br><br><br><br><br><br><br><br><br><br><br><br>
-<pre> <h1>          CLICK ON THE BOOK YOU WANT TO PURCHASE!!<h1></pre>
-<pre>
 
-       <a href=" https://www.amazon.in/Textbook-Engineering-Mathematics-Sem-II/dp/8131808416/ref=sr_1_2?keywords=np+bali&qid=1580926311&sr=8-2">             <img src="npbali.jpg" height="400px" width="300px"></img> </a>                <a href="https://www.amazon.in/Engineering-Physics-KIIT-B-K-Pandey/dp/8131519678/ref=sr_1_1?crid=2KRP0GC1KD1H8&keywords=bk+pandey&qid=1580926372&sprefix=bk+pan%2Caps%2C413&sr=8-1">    <img src="bkpandey.jpg" height="400px" width="300px"> </a>
-</img>
-<pre>
-<br>
-<pre>
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
 
-       <a href ="https://www.amazon.in/Introduction-Graph-Theory-Richard-Trudeau/dp/1684112311/ref=sr_1_2_sspa?crid=2NLCJN0UUDRFF&keywords=graph+theory&qid=1580926481&sprefix=graph+th%2Caps%2C455&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUE4WjdKMlQ0WTdESkEmZW5jcnlwdGVkSWQ9QTA0MzMzNDcyT1pJM0VHMENNSjFZJmVuY3J5cHRlZEFkSWQ9QTAxOTQ4NDIzSjQ1R0JISkFYU0kzJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">             <img src="gt.jpg" height="400px" width="300px"></img>  </a>              <a href="https://www.amazon.in/Industrial-Psychology-Narendar-Singh/dp/0071067825/ref=sr_1_3?crid=3DLUBCLUOXM61&keywords=industrial+psychology+books&qid=1580926560&sprefix=industrial+ps%2Caps%2C411&sr=8-3">     <img src="ip.jpg" height="400px" width="300px"> </a>
-</img>
-<pre>
-<br>
-<pre>
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <h3>More Text</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+  <div class="main">
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Dec 7, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
 
-     <a href ="https://www.amazon.in/Principle-Electrical-Machines-V-K-Mehta/dp/8121921910/ref=sr_1_4?keywords=electrical+machines+books&qid=1580926583&sr=8-4">               <img src="ee.jpeg" height="400px" width="300px"></img> </a>               <a href="https://www.amazon.in/Let-Us-16TH-Yashavant-Kanetkar/dp/9387284492/ref=sr_1_1?keywords=let+us+c&qid=1580926644&sr=8-1">     <img src="c.jpg" height="400px" width="300px"> </a>
-</img>
-<pre>
+<!-- Footer -->
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
 </body></html>
